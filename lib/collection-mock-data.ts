@@ -1,0 +1,97 @@
+import { CollectionDuck, CollectionStats } from "@/types/collection";
+
+export const mockCollectionDucks: CollectionDuck[] = [
+  {
+    id: "duck-junkrat",
+    name: "Pato Junkrat",
+    slug: "duck-junkrat",
+    theme: "Junkrat",
+    rarity: "epic",
+    level: 4,
+    maxLevel: 10,
+    xp: 430,
+    nextLevelXp: 500,
+    unlockedRewards: 4,
+    totalRewards: 10,
+    isFavorite: true,
+  },
+  {
+    id: "duck-king",
+    name: "Pato Rei",
+    slug: "duck-king",
+    theme: "Realeza",
+    rarity: "legendary",
+    level: 2,
+    maxLevel: 10,
+    xp: 120,
+    nextLevelXp: 250,
+    unlockedRewards: 2,
+    totalRewards: 10,
+  },
+  {
+    id: "duck-basic",
+    name: "Pato Clássico",
+    slug: "duck-basic",
+    theme: "Inicial",
+    rarity: "common",
+    level: 1,
+    maxLevel: 10,
+    xp: 40,
+    nextLevelXp: 100,
+    unlockedRewards: 1,
+    totalRewards: 10,
+  },
+  {
+    id: "duck-shadow",
+    name: "Pato Sombra",
+    slug: "duck-shadow",
+    theme: "Noturno",
+    rarity: "legendary",
+    level: 6,
+    maxLevel: 10,
+    xp: 980,
+    nextLevelXp: 1200,
+    unlockedRewards: 6,
+    totalRewards: 10,
+  },
+  {
+    id: "duck-ninja",
+    name: "Pato Ninja",
+    slug: "duck-ninja",
+    theme: "Shinobi",
+    rarity: "rare",
+    level: 3,
+    maxLevel: 10,
+    xp: 210,
+    nextLevelXp: 300,
+    unlockedRewards: 3,
+    totalRewards: 10,
+  },
+  {
+    id: "duck-mage",
+    name: "Pato Mago",
+    slug: "duck-mage",
+    theme: "Arcano",
+    rarity: "epic",
+    level: 5,
+    maxLevel: 10,
+    xp: 740,
+    nextLevelXp: 800,
+    unlockedRewards: 5,
+    totalRewards: 10,
+  },
+];
+
+export const mockCollectionStats: CollectionStats = {
+  totalDucks: mockCollectionDucks.length,
+  totalLegendaryDucks: mockCollectionDucks.filter(
+    (duck) => duck.rarity === "legendary"
+  ).length,
+  totalEpicDucks: mockCollectionDucks.filter((duck) => duck.rarity === "epic")
+    .length,
+  totalRewardsUnlocked: mockCollectionDucks.reduce(
+    (acc, duck) => acc + duck.unlockedRewards,
+    0
+  ),
+  totalRavelboxes: 4,
+};
