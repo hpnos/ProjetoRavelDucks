@@ -1,0 +1,48 @@
+import { LiveOverlayEvent } from "@/types/overlay";
+
+export const mockLiveOverlayEvents: LiveOverlayEvent[] = [
+  {
+    id: "event-001",
+    username: "guilherme",
+    displayName: "Guilherme",
+    type: "ravelbox",
+    title: "Ravelbox desbloqueada!",
+    description: "Guilherme desbloqueou uma Ravelbox ao evoluir o Pato Sombra.",
+    rarity: "legendary",
+    icon: "🎁",
+    createdAt: "agora",
+  },
+  {
+    id: "event-002",
+    username: "levi",
+    displayName: "Levi",
+    type: "rare_card",
+    title: "Carta lendária revelada!",
+    description: "Levi revelou o Pato Rei no Pacote da Live.",
+    rarity: "legendary",
+    icon: "👑",
+    createdAt: "2 min",
+  },
+  {
+    id: "event-003",
+    username: "ravel",
+    displayName: "Ravel",
+    type: "level_up",
+    title: "Pato subiu de nível!",
+    description: "Ravel evoluiu o Pato Junkrat para o nível 5.",
+    rarity: "epic",
+    icon: "✨",
+    createdAt: "5 min",
+  },
+  {
+    id: "event-004",
+    username: "player123",
+    displayName: "Player123",
+    type: "pack_opened",
+    title: "Pacote aberto!",
+    description: "Player123 abriu um Pacote da Live com 4 cartas.",
+    rarity: "rare",
+    icon: "🎴",
+    createdAt: "8 min",
+  },
+];

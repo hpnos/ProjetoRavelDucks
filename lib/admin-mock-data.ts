@@ -102,14 +102,14 @@ export const adminPacks: AdminPack[] = [
 
 export const adminUsers: AdminUser[] = [
   {
-    id: "user-ravel",
+    id: "jMSLatVdBsccg5zySKo1viMsqrz1",
     username: "ravel",
     displayName: "Ravel",
     totalDucks: 7,
     availablePacks: 1,
   },
   {
-    id: "user-levi",
+    id: "zrEBFqzXTLgXMB9ASKTRXtwrSVy1",
     username: "levi",
     displayName: "Levi",
     totalDucks: 4,

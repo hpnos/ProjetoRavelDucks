@@ -17,10 +17,40 @@ export default function Home() {
           ilha pública para a comunidade da live.
         </p>
 
-        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <Link
+            href="/login"
+            className="rounded-xl bg-yellow-400 px-6 py-3 font-bold text-zinc-950 transition hover:bg-yellow-300"
+          >
+            Entrar
+          </Link>
+
+          <Link
+            href="/cadastro"
+            className="rounded-xl border border-yellow-400 px-6 py-3 font-bold text-yellow-400 transition hover:bg-yellow-400 hover:text-zinc-950"
+          >
+            Criar conta
+          </Link>
+
+          <Link
+            href="/colecao"
+            className="rounded-xl border border-zinc-700 px-6 py-3 font-bold text-zinc-300 transition hover:border-yellow-400 hover:text-yellow-400"
+          >
+            Coleção
+          </Link>
+
+          <Link
+            href="/pacotes"
+            className="rounded-xl border border-zinc-700 px-6 py-3 font-bold text-zinc-300 transition hover:border-yellow-400 hover:text-yellow-400"
+          >
+            Pacotes
+          </Link>
+        </div>
+
+        <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           <Link
             href="/patos/duck-junkrat"
-            className="rounded-xl bg-yellow-400 px-6 py-3 font-bold text-zinc-950 transition hover:bg-yellow-300"
+            className="rounded-xl border border-zinc-700 px-6 py-3 font-bold text-zinc-300 transition hover:border-yellow-400 hover:text-yellow-400"
           >
             Pato
           </Link>
@@ -40,24 +70,33 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/colecao"
-            className="rounded-xl border border-zinc-700 px-6 py-3 font-bold text-zinc-300 transition hover:border-yellow-400 hover:text-yellow-400"
-          >
-            Coleção
-          </Link>
-
-          <Link
-            href="/pacotes"
-            className="rounded-xl border border-zinc-700 px-6 py-3 font-bold text-zinc-300 transition hover:border-yellow-400 hover:text-yellow-400"
-          >
-            Pacotes
-          </Link>
-
-          <Link
             href="/admin"
-            className="rounded-xl border border-yellow-400 px-6 py-3 font-bold text-yellow-400 transition hover:bg-yellow-400 hover:text-zinc-950"
+            className="rounded-xl border border-zinc-700 px-6 py-3 font-bold text-zinc-300 transition hover:border-yellow-400 hover:text-yellow-400"
           >
             Admin
+          </Link>
+        </div>
+
+        <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <Link
+            href="/overlay/live"
+            className="rounded-xl border border-emerald-700/50 bg-emerald-950/30 px-6 py-3 font-bold text-emerald-400 transition hover:border-emerald-400"
+          >
+            Overlay (Completo)
+          </Link>
+
+          <Link
+            href="/overlay/live/compact"
+            className="rounded-xl border border-emerald-700/50 bg-emerald-950/30 px-6 py-3 font-bold text-emerald-400 transition hover:border-emerald-400"
+          >
+            Overlay (Compacto)
+          </Link>
+
+          <Link
+            href="/overlay/live/alert"
+            className="rounded-xl border border-emerald-700/50 bg-emerald-950/30 px-6 py-3 font-bold text-emerald-400 transition hover:border-emerald-400"
+          >
+            Overlay (Alerta)
           </Link>
         </div>
       </section>
